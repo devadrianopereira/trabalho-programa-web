@@ -56,22 +56,25 @@
         .menu  li  {
             display: inline;
             font-family: var(--fonte-padrão);
+            font-weight: bold;
+            
             
         }
 
    .menu a, a:link {
-        background-color: #063d1e;
+        
             text-decoration: none;
-            padding: 7px;
-            border: solid black 1px;
-            border-radius: 17px;
-            color: white;
+            padding: 10px;
+            
+            
+            color: var(--cor2);
 
     }
 
     a:hover {
             background-color: var(--cor1);
             color: white;
+            border-radius: 5px;
 
         }
 
@@ -98,6 +101,27 @@
     font-family: var(--fonte-padrão);
 }        
 
+
+@media only screen and (max-width: 767px)  { 
+
+
+    a,a:link {
+            
+            
+            text-decoration: none;
+            padding: 3px;
+            
+            
+            color: var(--cor2);
+        }
+
+        li {
+            display: inline;
+            font-family: var(--fonte-padrão);
+            font-size: 15px;
+            
+        }
+}
 
     </style>
 
