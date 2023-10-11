@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+
+    <style>
+        :root {
+            --fonte-padrão: Arial, Helvetica, sans-serif;
+            --cor1:#3ddc84;
+            --cor2:#063d1e;
+            
+        }
+
+        body {
+            margin: 0;
+            background-color: rgba(245, 245, 220, 0.932);
+            
+            
+                }
+
+        header {
+
+            background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+            color: white;
+            text-align: center;
+            height: 200px;
+            
+        }        
+
+        header h1 {
+            padding: 60px;
+            font-family: var(--fonte-padrão);
+            font-size: 35px;
+            text-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.753);
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        .menu {
+        grid-column-start: 6;
+        grid-column-end: 12;
+        justify-content: center;
+        
+        }
+
+      .menu  ul {
+            list-style-type: none;
+           
+        }
+
+        .menu  li  {
+            display: inline;
+            font-family: var(--fonte-padrão);
+            
+        }
+
+   .menu a, a:link {
+        background-color: #063d1e;
+            text-decoration: none;
+            padding: 7px;
+            border: solid black 1px;
+            border-radius: 17px;
+            color: white;
+
+    }
+
+    a:hover {
+            background-color: var(--cor1);
+            color: white;
+
+        }
+
+        main {
+            background-color: white;
+            border-radius: 5px;
+            
+            min-width: 200px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+.principal > h2 {
+
+    text-align: center;
+    font-family: var(--fonte-padrão);
+    font-size: 30px;
+
+}
+
+.principal li {
+    font-size: 20px;
+    
+    font-family: var(--fonte-padrão);
+}        
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Formação educacional</h1>
+    </header>
+    
+    <nav class="container menu">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Portifólio</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <section class="formacao">
+
+           <div class="principal">
+                <h2>Formação</h2>
+                <ul>
+                    <li>Tecnólogo (Em andamento)
+                        Uninter - Análise e Desenvolvimento de Sistemas -
+                        01/2023</li>
+                    <li>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS] - Curso em Vídeo</li>
+                    <li>Curso HTML5 e CSS3: módulo 2 de 5 [40 HORAS] - Curso em Vídeo</li>
+                    <li>Curso HTML5 e CSS3: módulo 3 de 5 [40 HORAS] - Curso em Vídeo</li>
+                </ul>
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+</body>
+</html>
