@@ -62,18 +62,23 @@
 
         }
 
+
+        /*formulário */
         .formulario {
 
-            margin: auto;
+            margin: auto; /*para centralizar  o formulário*/
             display: block;
             
             
             background-color: white;
-            width: 400px;
-            height: 700px;
+            width: 400px; /*largura do formulário */
+            height: 700px; /*altura do formulário*/
             
         }
 
+
+
+        /*para estilizar o fundo da palavra "contato" formulário */
         #contato {
             background-color: var(--cor1);
             height: 60px;
@@ -83,6 +88,7 @@
             font-size: 16px;
         }
 
+        /*para modificar o parágrafo "contato" do formulário */
         #contato > p {
             text-align: center;
             padding-top: 20px;
@@ -90,6 +96,9 @@
             text-shadow: 1px 1px 2px black;
         }
 
+
+
+        /*faz ajustes na palavra "Nome" do formulário*/
         .nome > label {
 
             margin-left: 10px;
@@ -100,18 +109,21 @@
             font-weight: bold;
         }
 
+
+        /*para fazer ajustes no input , na caixa para digitar o nome */
         .nome > input {
             margin-left: 10px ;
             font-size: 1em;
             height: 100%;
             border-radius: 4px;
             padding: 10px;
-            width: 80%;
-            border: 1px solid var(--cor2);
+            width: 80%; /*largura da caixa para digitar o nome*/
+            border: 1px solid var(--cor2); /*borda do tipo sólida da caixa */
         background-color: #3ddc852f;
         }
 
 
+        /*para fazer ajustes no input , na caixa para digitar o e-mail */
         .email > label {
 
 margin-left: 10px;
@@ -143,6 +155,8 @@ font-family: var(--fonte-padrão);
 font-weight: bold;
 }
 
+
+/*faz ajustes na caixa para escrita da mensagem */
 .mensagem > textarea {
 margin-left: 10px ;
 font-size: 1em;
@@ -154,6 +168,8 @@ border: 1px solid var(--cor2);
 background-color: #3ddc852f;
 }
 
+
+/*faz ajuste na opção de enviar , do formulário */
     div > input[type=submit] {
         display: block;
         font-size: 17px;
@@ -161,18 +177,27 @@ background-color: #3ddc852f;
         height: 40px;
         background-color: #49a09d;
         color: white;
-        border: none;
+        border: none; /*para deixar sem borda */
         border-radius: 5px;
         margin-top: 55px;
         margin-left: 33px;
     }
 
+   
+    
+    div > input[type=submit]:hover {
+        cursor: pointer; /* quando passar o mouse por cima ele modifica o cursor */
+        background-color: var(--cor1);
+    }
+
+
+    /*media-query para telas pequenas*/
     @media screen and (max-width:767px) {
          .formulario {
             right: 10%;
             top: 5%; 
-            width: 80vw;
-            height: 540px;
+            width: 80vw; /*80% da largura da viewport*/
+            height: 540px; 
          }   
 
          
@@ -216,7 +241,7 @@ background-color: #3ddc852f;
         <ul>
             <li><a href="../index.html" target="_parent">Início</a></li>
             <li><a href="../sobre mim/index.html" target="_parent">Sobre mim</a></li>
-            <li><a href="../contato/index.html">Contato</a></li>
+            <li><a href="../formacao/index.html">Formação</a></li>
             <li><a href="https://devadrianopereira.github.io/projeto-android/" target="_blank">Portifólio</a></li>
         </ul>
     </nav>
@@ -224,7 +249,7 @@ background-color: #3ddc852f;
     <section class="formulario">
 
         <div>
-            <form action="#" autocomplete="on" >
+            <form action="#"  autocomplete="on">
 
                 <div id="contato">
                     <p>Contato</p>
@@ -233,18 +258,20 @@ background-color: #3ddc852f;
 
                 <div class="nome">
                     <label for="inome">Nome*</label>
-                    <input type="text" name="nome" id="inome" required placeholder="Digite seu nome">
+                    <input type="text" name="nome" id="inome" required placeholder="Digite seu nome" autocomplete="name">
                 </div>
 <br>
                 <div class="email">
                     <label for="iemail">E-mail*</label>
-                    <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required>
+                    <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required autocomplete="email">
 
                 </div>
                 <br>
                 <div class="mensagem">
                     <label for="imensagem"> Mensagem*</label>
-                    <textarea name="mensagem" id="imensagem" cols="30" rows="10" placeholder="Sua mensagem aqui"></textarea>
+
+                    <!--para criar um campo e escrever a mensagem -->
+                    <textarea name="mensagem" id="imensagem" cols="30" rows="10" placeholder="Sua mensagem aqui"></textarea> 
                 </div>
 
                 <div class="enviar">
