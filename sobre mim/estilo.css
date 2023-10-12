@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+:root {
+    --fonte-padrão: Arial, Helvetica, sans-serif;
+    --cor1:#3ddc84;
+    --cor2:#063d1e;
+    
+}
+
+
+body {
+margin: 0;
+}
+
+
+
+/*elemento grid */
+.container {
+    display: grid;
+}
+
+
+
+header {
+
+    color: white;
+    font-family: var(--fonte-padrão);
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-image: linear-gradient(to top , var(--cor1), var(--cor2) );
+    font-size: 22px;
+    
+    
+}
+
+.menu {
+    margin-top: 10px;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content:center; /* para centralizar o menu*/
+    gap: 20px;
+}
+
+.info {
+    font-size: 19px;
+}
+
+
+ /*
+  imagem começa na coluna 1 e termina na coluna 3*/   
+.imagem_adriano {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.historia {
+    font-family: var(--fonte-padrão);
+    grid-column-start: 4; /*parte do texto começa na coluna 4*/
+    grid-column-end: 12; /*parte do texto termina na coluna 12*/
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify; /*para deixar o texto justificado , alinhado*/
+    font-size: 20px;
+    
+}
+
+.historia p {
+
+    text-indent: 20px;
+    line-height: 30px; /* altura entre linhas */
+}
+
+footer {
+    
+   
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #063d1e;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--fonte-padrão);
+}
+
+
+
+ul {
+    list-style-type: none;
+   
+}
+
+a,a:link {
+    
+    text-decoration: none;
+    padding: 8px;
+    color: var(--cor2);
+}
+
+li {
+    display: inline;
+    font-family: var(--fonte-padrão);
+    font-weight: bold;
+    
+}
+
+a:hover {
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 5px;
+    
+}
+
+
+/*media-query para telas pequenas*/
+@media only screen and (max-width: 767px)  {
+    .foto {grid-column-start: 1;
+    grid-column-end: 1;}
+
+    .imagem_adriano {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .historia {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    a,a:link {
+    
+    
+    text-decoration: none;
+    padding: 3px;
+    
+    
+    color: var(--cor2);
+}
+
+li {
+    display: inline;
+    font-family: var(--fonte-padrão);
+    font-size: 15px;
+    
+}
+}

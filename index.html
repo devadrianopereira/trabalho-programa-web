@@ -3,106 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Meu portifólio</title>
 
-    <style>
-
-        :root {
-            --fonte-padrão: Arial, Helvetica, sans-serif;
-            --cor1:#3ddc84;
-            --cor2:#063d1e;
-        }
-
-
     
-
-        header {
-            
-            height: 250px;
-            background-image: linear-gradient(to top , var(--cor1), var(--cor2)); /* esta função adiciona um gradiente linear , com duas cores , e direcionado para cima */
-                           
-        }
-
-        header h1 {
-            padding: 60px;
-            font-family: var(--fonte-padrão);
-           text-align: center; 
-           font-size: 35px;
-            text-shadow: 2px 2px 3px  rgb(0, 0, 0); /* esta função permite criar uma sombra no texto */
-            color: white;
-            margin: auto;
-            
-        
-        }
-
-        
-        nav 
-        {
-            
-        text-align: center;
-        padding: 0px;
-        margin-top: 15px;
-        
-        }
-       
-
-        nav ul,li {
-            list-style-type: none;
-            display: inline; /* o menu será em linha com esta função*/
-            font-size: 17px; 
-               }
-
-               
-    nav a {
-        
-     
-      color: var(--cor2);
-      text-decoration: none;
-      padding:10px;
-      
-       font-family: var(--fonte-padrão);
-      font-weight: bold; /* esta função permite deixar a fonte mais forte , em negrito*/
-       margin: 5px;
-     
-
-               }
-
-
-    nav a:hover { /*quando passar o mouse por cima ele faz a função abaixo*/
-        background-color:var(--cor1);
-        color: white;
-        border-radius: 5px; /* arredonda os cantos da borda externa*/
-    }
-
-
-   
-
-
- /* media query para telas pequenas*/
-    @media only screen and (max-width: 767px)  { 
-       
-       
-        li {
-            font-size: 17px;
-            display: flex; /* para fazer com que o menu fique em coluna , um emcima do outro*/
-        
-        }
-
-        a,a:link {
-
-        
-            margin: auto; /* para o menu sempre ficar no meio da tela */
-            margin-top: 15px;
-            
-            text-decoration: none;
-            padding:5px;
-            
-            border-radius: 5px;
-            
-        }
-   }
-
-    </style>
 
 </head>
 

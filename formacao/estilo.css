@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+:root {
+    --fonte-padrão: Arial, Helvetica, sans-serif;
+    --cor1:#3ddc84;
+    --cor2:#063d1e;
+    
+}
+
+body {
+    margin: 0;
+    background-color: rgba(245, 245, 220, 0.932);
+    
+    
+        }
+
+header {
+
+    background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    color: white;
+    text-align: center;
+    height: 200px; /*altura do cabeçalho*/
+    
+}        
+
+header h1 {
+    padding: 60px;
+    font-family: var(--fonte-padrão);
+    font-size: 35px;
+    text-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.753);
+    margin: auto;
+}
+
+/*display grid criado para o menu*/
+.container {
+    display: grid;
+}
+
+
+.menu {
+grid-column-start: 6; /*inicia na coluna 6*/
+grid-column-end: 12; /*termina na coluna 12*/
+justify-content: center; /*para centralizar o menu */
+
+}
+
+.menu  ul {
+    list-style-type: none;
+   
+}
+
+.menu  li  {
+    display: inline;
+    font-family: var(--fonte-padrão);
+    font-weight: bold;
+    
+    
+}
+
+/*links do menu */
+.menu a, a:link {
+
+    text-decoration: none;
+    padding: 10px;
+    
+    
+    color: var(--cor2);
+
+}
+
+a:hover {
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 5px;
+
+}
+
+/*conteúdo principal */
+main {
+    background-color: white;
+    border-radius: 5px;
+    
+    min-width: 200px; /*largura mínima do elemento*/
+    max-width: 800px; /* largura máxima do elemento*/
+    margin: auto; /* para centralizar o conteúdo na tela*/
+}
+
+.principal > h2 {
+
+text-align: center;
+font-family: var(--fonte-padrão);
+font-size: 30px;
+
+}
+
+.principal li {
+font-size: 20px;
+
+font-family: var(--fonte-padrão);
+}        
+
+
+
+
+/*media-query para telas pequenas */   
+@media only screen and (max-width: 767px)  { 
+
+
+.menu a,a:link {
+    
+    
+    text-decoration: none;
+    padding: 3px;
+    
+    
+    color: var(--cor2);
+}
+
+.menu li {
+    display: inline;
+    font-family: var(--fonte-padrão);
+    font-size: 14px;
+    
+}
+}
