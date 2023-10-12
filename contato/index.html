@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+
+        /* variável em css */
+        :root {
+            --fonte-padrão: Arial, Helvetica, sans-serif;
+            --cor1:#3ddc84;
+            --cor2:#063d1e;
+            
+        }
+
+
+        body {
+            
+            background-image: linear-gradient(to right, var(--cor1), var(--cor2) );
+        }
+
+        .container {
+            display: grid;
+        }
+
+        .menu {
+        grid-column-start: 6;
+        grid-column-end: 12;
+        justify-content: center;
+        
+        }
+
+      .menu  ul {
+            list-style-type: none;
+           
+        }
+
+        .menu  li  {
+            display: inline;
+            font-family: var(--fonte-padrão);
+            font-weight: bold;
+            
+            
+        }
+
+   .menu a, a:link {
+        
+            text-decoration: none;
+            padding: 10px;
+            
+            
+            color: white;
+
+    }
+
+    a:hover {
+            background-color: var(--cor1);
+            color: white;
+            border-radius: 5px;
+
+        }
+
+        .formulario {
+
+            margin: auto;
+            display: block;
+            
+            
+            background-color: white;
+            width: 400px;
+            height: 700px;
+            
+        }
+
+        #contato {
+            background-color: var(--cor1);
+            height: 60px;
+            color: white;
+            font-family: var(--fonte-padrão);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #contato > p {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 20px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .nome > label {
+
+            margin-left: 10px;
+            display: block;
+            padding-top: 20px;
+            font-size: 16px;
+            font-family: var(--fonte-padrão);
+            font-weight: bold;
+        }
+
+        .nome > input {
+            margin-left: 10px ;
+            font-size: 1em;
+            height: 100%;
+            border-radius: 4px;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid var(--cor2);
+        background-color: #3ddc852f;
+        }
+
+
+        .email > label {
+
+margin-left: 10px;
+display: block;
+padding-top: 20px;
+font-size: 16px;
+font-family: var(--fonte-padrão);
+font-weight: bold;
+}
+
+.email > input {
+margin-left: 10px ;
+font-size: 1em;
+height: 100%;
+border-radius: 4px;
+padding: 10px;
+width: 80%;
+border: 1px solid var(--cor2);
+background-color: #3ddc852f;
+}
+
+.mensagem > label {
+
+margin-left: 10px;
+display: block;
+padding-top: 20px;
+font-size: 16px;
+font-family: var(--fonte-padrão);
+font-weight: bold;
+}
+
+.mensagem > textarea {
+margin-left: 10px ;
+font-size: 1em;
+height: 100%;
+border-radius: 4px;
+padding: 10px;
+width: 80%;
+border: 1px solid var(--cor2);
+background-color: #3ddc852f;
+}
+
+    div > input[type=submit] {
+        display: block;
+        font-size: 17px;
+        width: 75%;
+        height: 40px;
+        background-color: #49a09d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 55px;
+        margin-left: 33px;
+    }
+
+    @media screen and (max-width:767px) {
+         .formulario {
+            right: 10%;
+            top: 5%; 
+            width: 80vw;
+            height: 540px;
+         }   
+
+         
+       
+         div > input[type=submit] {
+        display: block;
+        font-size: 15px;
+        width: 75%;
+        height: 40px;
+        background-color: #49a09d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-left: 33px;
+    }
+
+    a,a:link {
+            
+            
+            text-decoration: none;
+            padding: 4px;
+            
+            
+            color: var(--cor2);
+        }
+
+        li {
+            display: inline;
+            font-family: var(--fonte-padrão);
+            font-size: 12px;
+            
+        }
+    }
+
+    </style>
+</head>
+<body>      
+
+    <nav class="container menu">
+        <ul>
+            <li><a href="../index.html" target="_parent">Início</a></li>
+            <li><a href="../sobre mim/index.html" target="_parent">Sobre mim</a></li>
+            <li><a href="../contato/index.html">Contato</a></li>
+            <li><a href="https://devadrianopereira.github.io/projeto-android/" target="_blank">Portifólio</a></li>
+        </ul>
+    </nav>
+
+    <section class="formulario">
+
+        <div>
+            <form action="#" autocomplete="on" >
+
+                <div id="contato">
+                    <p>Contato</p>
+                </div>
+                <br>
+
+                <div class="nome">
+                    <label for="inome">Nome*</label>
+                    <input type="text" name="nome" id="inome" required placeholder="Digite seu nome">
+                </div>
+<br>
+                <div class="email">
+                    <label for="iemail">E-mail*</label>
+                    <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required>
+
+                </div>
+                <br>
+                <div class="mensagem">
+                    <label for="imensagem"> Mensagem*</label>
+                    <textarea name="mensagem" id="imensagem" cols="30" rows="10" placeholder="Sua mensagem aqui"></textarea>
+                </div>
+
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+
+                </div>
+
+            </form>
+        </div>
+
+
+    </section>
+
+
+    
+</body>
+</html>

@@ -19,7 +19,7 @@
         header {
             
             height: 250px;
-            background-image: linear-gradient(to top , var(--cor1), var(--cor2));
+            background-image: linear-gradient(to top , var(--cor1), var(--cor2)); /* esta função adiciona um gradiente linear , com duas cores , e direcionado para cima */
                            
         }
 
@@ -28,7 +28,7 @@
             font-family: var(--fonte-padrão);
            text-align: center; 
            font-size: 35px;
-            text-shadow: 2px 2px 3px  rgb(0, 0, 0);
+            text-shadow: 2px 2px 3px  rgb(0, 0, 0); /* esta função permite criar uma sombra no texto */
             color: white;
             margin: auto;
             
@@ -48,8 +48,8 @@
 
         nav ul,li {
             list-style-type: none;
-            display: inline;
-            font-size: 17px;
+            display: inline; /* o menu será em linha com esta função*/
+            font-size: 17px; 
                }
 
                
@@ -61,37 +61,37 @@
       padding:10px;
       
        font-family: var(--fonte-padrão);
-      font-weight: bold;
+      font-weight: bold; /* esta função permite deixar a fonte mais forte , em negrito*/
        margin: 5px;
      
 
                }
 
 
-    nav a:hover {
+    nav a:hover { /*quando passar o mouse por cima ele faz a função abaixo*/
         background-color:var(--cor1);
         color: white;
-        border-radius: 5px;
+        border-radius: 5px; /* arredonda os cantos da borda externa*/
     }
 
 
    
 
 
-
+ /* media query para telas pequenas*/
     @media only screen and (max-width: 767px)  { 
        
        
         li {
             font-size: 17px;
-            display: flex;
+            display: flex; /* para fazer com que o menu fique em coluna , um emcima do outro*/
         
         }
 
         a,a:link {
 
         
-            margin: auto;
+            margin: auto; /* para o menu sempre ficar no meio da tela */
             margin-top: 15px;
             
             text-decoration: none;
@@ -114,10 +114,10 @@
 
     <nav>
         <ul>
-            <li><a href="sobre mim/index.html">Sobre mim</a></li>
-            <li><a href="formacao/index.html" target="_parent">Formação</a></li>
+            <li><a href="sobre mim/index.html" target="_self">Sobre mim</a></li>
+            <li><a href="formacao/index.html" target="_self">Formação</a></li>
             <li><a href="https://devadrianopereira.github.io/projeto-android/" target="_blank"> Portifólio</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="contato/index.html" target="_self">Contato</a></li>
         </ul>
     </nav>
 

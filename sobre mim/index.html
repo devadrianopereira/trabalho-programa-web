@@ -21,11 +21,13 @@ body {
 
 
 
+     /*elemento grid */
         .container {
             display: grid;
         }
 
 
+       
         header {
 
             color: white;
@@ -43,7 +45,7 @@ body {
             margin-top: 10px;
             grid-column-start: 6;
             grid-column-end: 12;
-            justify-content:center;
+            justify-content:center; /* para centralizar o menu*/
             gap: 20px;
         }
 
@@ -51,6 +53,9 @@ body {
             font-size: 19px;
         }
 
+
+         /*
+          imagem começa na coluna 1 e termina na coluna 3*/   
         .imagem_adriano {
 
             grid-column-start: 1;
@@ -59,11 +64,11 @@ body {
 
         .historia {
             font-family: var(--fonte-padrão);
-            grid-column-start: 4;
-            grid-column-end: 12;
+            grid-column-start: 4; /*parte do texto começa na coluna 4*/
+            grid-column-end: 12; /*parte do texto termina na coluna 12*/
             padding-left: 15px;
             padding-right: 15px;
-            text-align: justify;
+            text-align: justify; /*para deixar o texto justificado , alinhado*/
             font-size: 20px;
             
         }
@@ -71,7 +76,7 @@ body {
         .historia p {
 
             text-indent: 20px;
-            line-height: 30px;
+            line-height: 30px; /* altura entre linhas */
         }
 
         footer {
@@ -114,6 +119,8 @@ body {
             
         }
 
+
+        /*media-query para telas pequenas*/
         @media only screen and (max-width: 767px)  {
             .foto {grid-column-start: 1;
             grid-column-end: 1;}
@@ -156,8 +163,8 @@ body {
     <nav class="container menu">
         <ul>
             <li><a href="../index.html" target="_self">Início</a></li>
-            <li><a href="../formacao/index.html" target="_parent">Formação</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="../formacao/index.html" target="_self">Formação</a></li>
+            <li><a href="../contato/index.html" target="_self">Contato</a></li>
             <li><a href="https://devadrianopereira.github.io/projeto-android/" target="_blank">Portifólio</a></li>
         </ul>
     </nav>
@@ -184,7 +191,7 @@ body {
 
                 <h2>Adriano Pereira Anastacio</h2>
 
-                <p>Olá, meu nome é Adriano e tenho 27 anos. Nasci na cidade de São Bernardo do Campo, estado de São Paulo. No momento, exerço a função de motorista e estou cursando análise de desenvolvimento e sistemas na Uninter. Desde criança, amo tecnologia, jogos e computação. Li relatos na ‘internet’ e na televisão sobre hackers e isso despertou minha curiosidade. Como eles executam essa tarefa e, fui atrás de informações sobre esse mercado e como tudo funciona. E aqui estou eu, estudando análise de desenvolvimento e sistemas, para, futuramente, me tornar um programador e trabalhar com o que sempre me interessou.</p>
+                <p>Olá, meu nome é Adriano e tenho 27 anos. Nasci na cidade de São Bernardo do Campo, estado de São Paulo. No momento, trabalho como motorista e estou cursando análise e desenvolvimento de sistemas na Uninter. Desde criança, amo tecnologia, jogos e computação. Li relatos na ‘internet’ e na televisão sobre hackers e isso despertou minha curiosidade. Como eles executam essa tarefa e, fui atrás de informações sobre esse mercado e como tudo funciona. E aqui estou eu, estudando análise de desenvolvimento e sistemas, para, futuramente, me tornar um programador e trabalhar com o que sempre me interessou.</p>
 
             </section>
 
